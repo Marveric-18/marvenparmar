@@ -15,7 +15,7 @@ const ProfileHeader = () => {
     return(
         <div className={classNames(styles.profileHeader)}>
             <div className={classNames(styles.profilePictureBlock1)}>
-                <img className={classNames(styles.profileHeaderImage, styles.profilePicture)} src={MarvenProfileHeader} /> 
+                <img alt="MyProfilePicture" className={classNames(styles.profileHeaderImage, styles.profilePicture)} src={MarvenProfileHeader} /> 
             </div>
             <div className={classNames(styles.profilePictureBlock2)}>
                 <div className={classNames(styles.profileTitle)}>
@@ -36,7 +36,7 @@ const ProfileHeader = () => {
                         <EmailIcon className={classNames(styles.largeIcon)}/>
                     </IconButton>
                     <IconButton >
-                        <a href={MavrenResumePDF} target="_blank" >
+                        <a href={MavrenResumePDF} target="_blank" rel="noreferrer">
                             <ArticleIcon download="resume.pdf" className={classNames(styles.largeIcon)}/>
                         </a>
                     </IconButton>
