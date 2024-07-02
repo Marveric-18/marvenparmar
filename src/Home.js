@@ -2,7 +2,7 @@ import React from "react";
 import classNames from 'classname';
 
 import ProfileHeader from "./components/ProfileHeader";
-
+import AboutMe from "./components/AboutMe";
 
 import styles from "./index.module.css";
 
@@ -11,9 +11,9 @@ const Home = () => {
         <div className={classNames(styles.profileBlock, styles.sectionBlock)}>
           <ProfileHeader />
         </div>
-        {/* <div style={{backgroundColor: "red", minHeight: "100vh"}}>
-             Marven Home Page 2
-        </div> */}
+        <div className={classNames(styles.sectionBlock)}>
+             <AboutMe />
+        </div>
         
         </>)
 }

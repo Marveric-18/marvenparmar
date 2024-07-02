@@ -1,0 +1,37 @@
+.AboutMeTitleGrid {
+    padding: 3%;
+}
+
+.AboutMeContentGrid {
+    padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%
+}
+
+
+.AboutMeHeader{
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 38px;
+    text-align: center;
+}
+
+
+.AboutMeBody{
+    font-family: "Cutive Mono", monospace !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.listItem{
+    font-family: "Cutive Mono", monospace !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+}
+
+.listKey{
+    font-weight: 800;
+}
