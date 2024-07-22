@@ -72,6 +72,8 @@
     padding: 6%;
 }
 
+
+
 @media (max-width: 768px) {
     .profileTitleText {
         font-size: 30px; /* Decrease font size on smaller screens */

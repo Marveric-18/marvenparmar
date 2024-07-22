@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+
+.ExperienceHeader{
+    font-family: "Courier Prime", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 38px;
+    text-align: center;
+}
+
+.ExperienceTitleGrid {
+  padding: 3%;
+}
+
+.TimeLineHeader {
+  font-family: "Noto Serif", serif !important;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px !important;
+  padding-left: 16px;
+  text-align: left;
+}
+
+.ExperienceContentGrid {
+  padding: 3%;
+  padding-top: 0%;
+  font-family: "Noto Serif", serif !important;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px !important;
+}
+
+

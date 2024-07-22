@@ -5,6 +5,7 @@ import ProfileHeader from "./components/ProfileHeader";
 import AboutMe from "./components/AboutMe";
 
 import styles from "./index.module.css";
+import Experience from "./components/Experience";
 
 const Home = () => {
     return( <>
@@ -13,6 +14,9 @@ const Home = () => {
         </div>
         <div className={classNames(styles.sectionBlock)}>
              <AboutMe />
+        </div>
+        <div className={classNames(styles.sectionBlock)}>
+             <Experience />
         </div>
         
         </>)

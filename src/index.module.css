@@ -10,10 +10,25 @@
 }
 
 .sectionBlock{
-    min-height: 102dvh;
-    background-color: #FAF9F6;
+    min-height: 100vh;
+    
 }
 
-.aboutmeBlock{
-    background-color: #FAF9F6;
-}
+
+.ProfileHeaderParallax {
+    background-color: #faf9f6;
+    /* height: 90vh !important; */
+    background-image: url("./assets/images/profileHeaderBG.jpeg");
+  
+    /* Set a specific height */
+    /* min-height: 40vh; */
+    color: white;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    filter: blur(2px);
+  }
