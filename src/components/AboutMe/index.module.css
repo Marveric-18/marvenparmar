@@ -77,20 +77,15 @@
 
 .AboutMeParallax {
   background-color: #faf9f6;
-  /* height: 90vh !important; */
   background-image: url("../../assets/images/Marven_BG.jpg");
 
-  /* Set a specific height */
   min-height: 40vh;
   color: white;
 
-  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  /* filter: blur(2px); */
 }
 
 @media only screen and (max-width: 767px) {
@@ -108,8 +103,11 @@
   }
 
   .AboutMeParallax {
-    min-height: 30vh;
-    background-image: url("../../assets/images/Marven_BG.jpg");
+    display: none;
+  }
+
+  .AboutMeHeader{
+    font-size: 28px;
   }
 }
 
@@ -128,7 +126,16 @@
   }
 
   .AboutMeParallax {
-    min-height: 40vh;
-    background-image: url("../../assets/images/Marven_BG.jpg");
+    display: none;
+  }
+
+  .AboutMeHeader{
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width:1281px) { /* hi-res laptops and desktops */ 
+  .AboutMeParallax {
+    display: block;
   }
 }
