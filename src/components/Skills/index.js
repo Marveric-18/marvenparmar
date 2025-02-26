@@ -101,6 +101,7 @@ const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = createRef();
   useEffect(() => {
+    const currentRef = ref.current; 
     const observer = new IntersectionObserver(
       (entries) => {
         for (let entry of entries) {
@@ -114,11 +115,11 @@ const Skills = () => {
         threshold: 0.4,
       }
     );
-    observer.observe(ref.current);
+    observer.observe(currentRef);
     return () => {
-      ref.current && observer.unobserve(ref.current);
+      currentRef && observer.unobserve(currentRef);
     };
-  }, [ref]);
+  }, []);
 
   useEffect(() => {
     if (!isVisible) return;
