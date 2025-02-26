@@ -1,4 +1,4 @@
-import React, { createRef, useEffect, useState } from "react";
+import React, { createRef, useCallback, useEffect, useState } from "react";
 import classname from "classname";
 
 import Grid from "@mui/material/Grid";
@@ -100,6 +100,11 @@ function ProgressBar({ isVisible }) {
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
   const ref = createRef();
+  const callBackUnObserve = useCallback((observer) => {
+    const currentRef = ref?.current; 
+    if(currentRef) observer.unobserve(currentRef);
+}, [ref])
+
   useEffect(() => {
     const currentRef = ref.current; 
     const observer = new IntersectionObserver(
@@ -117,9 +122,9 @@ const Skills = () => {
     );
     observer.observe(currentRef);
     return () => {
-      currentRef && observer.unobserve(currentRef);
+      callBackUnObserve(observer);
     };
-  }, []);
+  }, [callBackUnObserve, ref]);
 
   useEffect(() => {
     if (!isVisible) return;
