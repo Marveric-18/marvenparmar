@@ -118,7 +118,7 @@ const Skills = () => {
     return () => {
       ref.current && observer.unobserve(ref.current);
     };
-  }, []);
+  }, [ref]);
 
   useEffect(() => {
     if (!isVisible) return;
