@@ -3,46 +3,9 @@ import classname from "classname";
 
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 import styles from "./index.module.css";
-import Marven from "../../assets/images/IMG_4832 copy.jpeg";
-import { Button, Paper } from "@mui/material";
-
-const generateList = (items) => (
-  <List>
-    {items.map((item, index) => (
-      <ListItem key={index} className={classname(styles.ListItem)}>
-        <ListItemIcon>
-          <ArrowRightIcon />
-        </ListItemIcon>
-        <ListItemText
-          primary={
-            <span className={classname(styles.listItem, styles.listKey)}>
-              {item.key}
-            </span>
-          }
-          secondary={
-            <span className={classname(styles.listItem)}>
-              {item.value ? item.value : null}
-            </span>
-          }
-        />
-      </ListItem>
-    ))}
-  </List>
-);
-
-// Example usage:
-const myPersonalInformation = [
-  { key: "Full Name", value: "Marven Parmar" },
-  { key: "Email", value: "marvenparmar@gmail.com" },
-  { key: "Phone", value: "+1 (416) 732-7975" },
-];
+import { Button } from "@mui/material";
 
 const AboutMe = () => {
   return (
