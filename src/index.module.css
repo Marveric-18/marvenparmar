@@ -11,7 +11,10 @@
 
 .sectionBlock{
     min-height: 100vh;
-    
+}
+
+.deviderBlock{
+  min-height: 10vh;
 }
 
 
@@ -31,4 +34,11 @@
     background-size: cover;
   
     filter: blur(2px);
+  }
+
+
+  @media (min-height: 700px) {
+    .sectionBlock {
+      min-height: 110vh;
+    }
   }

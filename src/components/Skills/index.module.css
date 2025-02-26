@@ -1,21 +1,21 @@
-.AboutMeTitleGrid {
+.SkillsTitleGrid {
   padding: 3%;
 }
 
-.AboutMeContentGrid {
+.SkillsContentGrid {
   padding-top: 3%;
   padding-left: 8%;
   padding-right: 8%;
 }
 
-.AboutMeStatsContainer {
+.SkillsStatsContainer {
   padding: 3%;
   text-align: center;
   /* border: 1px solid beige; */
   min-height: 15vh;
 }
 
-.AboutMeHeader {
+.SkillsHeader {
   font-family: "Courier Prime", monospace;
   font-style: normal;
   font-size: 90px;
@@ -23,14 +23,14 @@
   color: black;
 }
 
-.AboutMeSemiHeader {
+.SkillsSemiHeader {
   font-family: "Noto Serif", serif;
   font-style: normal;
   font-size: 50px;
   color: black;
 }
 
-.AboutMeBody {
+.SkillsBody {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -81,10 +81,9 @@
   margin: auto; /* Center the square within its container */
 }
 
-.AboutMeParallax {
-  /* background-color: #faf9f6; */
-  background-image: url("../../assets/images/IMG_3376-modified.jpg");
-
+.SkillsParallax {
+  background-color: #faf9f6;
+  background-image: url("../../assets/images/Marven.jpg");
 
   color: white;
   min-height: 70vh;
@@ -93,11 +92,11 @@
   /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 767px) {
-  .AboutMeBody {
+  .SkillsBody {
     font-size: 16px;
     height: 40vh;
   }
@@ -110,18 +109,18 @@
     padding: 0%;
   }
 
-  .AboutMeParallax {
+  .SkillsParallax {
     /* display: none; */
     min-height: 40vh;
     min-width: 50%;
   }
 
-  .AboutMeHeader{
+  .SkillsHeader {
     margin-top: 10%;
     font-size: 38px;
   }
 
-  .AboutMeSemiHeader {
+  .SkillsSemiHeader {
     font-family: "Noto Serif", serif;
     font-style: normal;
     font-size: 20px;
@@ -129,8 +128,8 @@
   }
 }
 
-@media only screen and (min-width:768px) and (max-width:1280px){
-  .AboutMeBody {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+  .SkillsBody {
     font-size: 20px;
     height: 25vh;
   }
@@ -143,16 +142,16 @@
     padding: 0%;
   }
 
-  .AboutMeParallax {
+  .SkillsParallax {
     min-height: 40vh;
     min-width: 50%;
   }
 
-  .AboutMeHeader{
+  .SkillsHeader {
     font-size: 28px;
   }
 
-  .AboutMeSemiHeader {
+  .SkillsSemiHeader {
     font-family: "Noto Serif", serif;
     font-style: normal;
     font-size: 30px;
@@ -160,8 +159,9 @@
   }
 }
 
-@media only screen and (min-width:1281px) { /* hi-res laptops and desktops */ 
-  .AboutMeParallax {
+@media only screen and (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  .SkillsParallax {
     display: block;
   }
 }

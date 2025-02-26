@@ -7,7 +7,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
 import ArticleIcon from '@mui/icons-material/Article';
 import IconButton from '@mui/material/IconButton';
-import MarvenProfileHeader from "../../assets/images/MarvenProfileHeader.jpg";
+import MarvenProfileHeader from "../../assets/images/HeadShot.png";
 import MavrenResumePDF from '../../assets/files/MavrenResumePDF.pdf';
 import styles from "./index.module.css";
 

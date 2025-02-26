@@ -10,6 +10,8 @@ import ListItemText from "@mui/material/ListItemText";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 import styles from "./index.module.css";
+import Marven from "../../assets/images/IMG_4832 copy.jpeg";
+import { Button, Paper } from "@mui/material";
 
 const generateList = (items) => (
   <List>
@@ -40,19 +42,12 @@ const myPersonalInformation = [
   { key: "Full Name", value: "Marven Parmar" },
   { key: "Email", value: "marvenparmar@gmail.com" },
   { key: "Phone", value: "+1 (416) 732-7975" },
-  { key: "Address", value: "Toronto, Ontario; Canada" },
-  { key: "Birthdate", value: "1st Sept, 1998" },
 ];
 
 const AboutMe = () => {
   return (
     <>
-    {/* <Box sx={{ flexGrow: 1 }}>
-        <Grid className={classname(styles.AboutMeParallax)} container spacing={2}>
-                
-        </Grid>
-      </Box> */}
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1, height: "fit-content" }}>
         <Grid
           className={classname(styles.AboutMeTitleGrid)}
           container
@@ -65,7 +60,7 @@ const AboutMe = () => {
             xs={12}
             md={12}
           >
-            {"< About Me >"}
+            {"About Me"}
           </Grid>
         </Grid>
         <Grid
@@ -79,7 +74,10 @@ const AboutMe = () => {
             xs={12}
             md={5}
           >
-            <List dense={false}>{generateList(myPersonalInformation)}</List>
+            <div
+              variant="outlined"
+              className={styles.AboutMeParallax}
+            ></div>
           </Grid>
           <Grid
             container
@@ -88,30 +86,57 @@ const AboutMe = () => {
             xs={12}
             md={7}
           >
+            {/* <List dense={false}>{generateList(myPersonalInformation)}</List> */}
             <Grid item xs={12} md={12}>
-              I am an aspiring Full Stack Developer, Backend Engineer, and Cloud
-              Solutions Developer. Proficient in the MERN stack, MEAN stack,
-              Spring Boot, Django, JavaScript, TypeScript, Java, Python, and
-              more.
-              <br />
-              <br />
-              With more than <b>3 Years of Industry exprience</b>, I have
-              excellent exposure of Software architecture and Designing,
-              Database Management of both Sql and NoSQL, & Cloud Resource
-              management with Azure and AWS.
+              <Grid
+                item
+                xs={12}
+                md={12}
+                className={classname(styles.AboutMeSemiHeader)}
+                sx={{ textAlign: "right" }}
+              >
+                Who AM I ?
+              </Grid>
+              <p>
+                I am a <b>Software Engineer</b> with expertise in{" "}
+                <b>Backend Development</b>, <b>RESTful APIs</b>,{" "}
+                <b>Microservices</b>, and <b>Azure Cloud</b>. My journey into
+                the world of software engineering has been fueled by a passion
+                for problem-solving and building impactful solutions. I
+                constantly strive to create scalable and efficient systems that
+                solve real-world problems.
+              </p>
+              <Grid
+                item
+                xs={12}
+                md={12}
+                className={classname(styles.AboutMeSemiHeader)}
+                sx={{ textAlign: "left" }}
+              >
+                What drives me ?  
+              </Grid>
+              <p>
+                What drives me is the challenge of turning complex requirements
+                into seamless digital experiences. I believe that great software
+                is not just about clean code—it's about delivering real value,
+                enhancing user experiences, and contributing to meaningful
+                innovation.
+              </p>
+
+              <p style={{textAlign: "center"}}>
+                <i>
+                  "I'm not a great programmer; I'm just a good programmer with
+                  great habits."
+                </i>
+              </p>
             </Grid>
-            <Grid className={classname()} item xs={12} md={12}>
-              <b>{"<< "}</b>I'm not a great programmer; I'm just a good
-              programmer with great habits. ~Kent Beck
-              <b>{" >>"}</b>
-            </Grid>
+            <Button style={{marginLeft: "1%"}}>Download Resume</Button>
           </Grid>
         </Grid>
-        <Grid className={classname(styles.AboutMeParallax)} container spacing={2}>
+        {/* <Grid className={classname(styles.AboutMeParallax)} container spacing={2}>
                 
-        </Grid>
+        </Grid> */}
       </Box>
-      
     </>
   );
 };

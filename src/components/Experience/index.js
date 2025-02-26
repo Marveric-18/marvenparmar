@@ -26,7 +26,7 @@ const Experience = () => {
             xs={12}
             md={12}
           >
-            {"< Journey >"}
+            {"Journey"}
           </Grid>
         </Grid>
 
