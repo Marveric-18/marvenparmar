@@ -7,7 +7,16 @@ import Box from "@mui/material/Box";
 import styles from "./index.module.css";
 import { Button } from "@mui/material";
 
+import MavrenResumePDF from '../../assets/files/MavrenResumePDF.pdf';
+
 const AboutMe = () => {
+  const onDownload = () => {
+    const link = document.createElement("a");
+    link.download = `Marven Parmar Resume.pdf`;
+    link.href = MavrenResumePDF;
+    link.click();
+  };
+
   return (
     <>
       <Box sx={{ flexGrow: 1, height: "fit-content" }}>
@@ -93,7 +102,7 @@ const AboutMe = () => {
                 </i>
               </p>
             </Grid>
-            <Button style={{marginLeft: "1%"}}>Download Resume</Button>
+            <Button style={{marginLeft: "1%"}} onClick={() => {onDownload()}}>Download Resume</Button>
           </Grid>
         </Grid>
         {/* <Grid className={classname(styles.AboutMeParallax)} container spacing={2}>
