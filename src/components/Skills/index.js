@@ -32,7 +32,7 @@ function LinearProgressWithLabel({ value, label, color }) {
         </Box>
         <Box sx={{ minWidth: 35 }}>
           <Typography variant="body2" sx={{ color: "text.secondary" }}>
-            {`${Math.round(value)}`}
+            {`${Math.floor(value/10)}`}
           </Typography>
         </Box>
       </Box>
@@ -44,21 +44,23 @@ function LinearProgressWithLabel({ value, label, color }) {
 function ProgressBar({ isVisible }) {
   const [progressList, setProgressList] = React.useState([
     
-    { label: "JavaScript", initial: 5, target: 95, current: 5, color: '#74B72E' },
-    { label: "TypeScript", initial: 10, target: 75, current: 10, color: 'maroon' },
-    { label: "GraphQL", initial: 5, target: 75, current: 5, color: 'maroon' },
-    { label: "Node.js", initial: 5, target: 95, current: 5, color: '#74B72E' },
+    { label: "JavaScript", initial: 5, target: 90, current: 5, color: '#74B72E' },
+    { label: "TypeScript", initial: 10, target: 80, current: 10, color: 'maroon' },
+    { label: "GraphQL", initial: 5, target: 80, current: 5, color: 'maroon' },
+    { label: "Python", initial: 30, target: 75, current: 30, color: '#ED7014' },
+    { label: "Node.js", initial: 5, target: 90, current: 5, color: '#74B72E' },
+    { label: "React.js", initial: 25, target: 80, current: 25, color: 'maroon' },
     { label: "REST API", initial: 10, target: 90, current: 10, color: '#74B72E' },
-    { label: "Azure DevOps", initial: 50, target: 90, current: 50, color: '#74B72E' },
-    { label: "Java", initial: 20, target: 70, current: 20, color: 'maroon' },
+    
    
-    { label: "Python", initial: 30, target: 85, current: 30, color: '#ED7014' },
-    { label: "SpringBoot", initial: 15, target: 75, current: 15, color: 'maroon' },
+    { label: "Microservices", initial: 15, target: 90, current: 15, color: '#74B72E' },
     
-    { label: "Postgres", initial: 40, target: 75, current: 40, color: 'maroon' },
     
-    { label: "Django REST", initial: 25, target: 85, current: 25, color: '#ED7014' },
-    { label: "MongoDB", initial: 5, target: 95, current: 5, color: '#74B72E' },
+    { label: "Azure DevOps", initial: 50, target: 90, current: 50, color: '#74B72E' },
+    { label: "AWS DevOps", initial: 20, target: 80, current: 20, color: 'maroon' },
+    { label: "PostgreSQL", initial: 40, target: 73, current: 40, color: '#ED7014' },
+    
+    { label: "MongoDB", initial: 5, target: 90, current: 5, color: '#74B72E' },
   ]);
 
   // Simulate progress updates
