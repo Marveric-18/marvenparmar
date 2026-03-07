@@ -1,12 +1,61 @@
+html { scroll-behavior: smooth; }
+
 .profileBlock {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background: #1D2B64;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
- 
+    background: #ffa17f; /* fallback for old browsers */
+    background: -webkit-linear-gradient(135deg, #00223e, #ffa17f); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(135deg, #00223e, #ffa17f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+}
+
+.navbarSection {
+  backdrop-filter: blur(8px);
+  position: absolute;
+  top: 0;
+}
+
+.navbar {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  color: #444;
+  
+  /* width: 100%; */
+  padding: 5px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.navLinks {
+  min-width: 120px;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 18px;
+  color: #faf9f6;
+}
+
+.navLinks a:hover {
+  opacity: 0.8;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+}
+
+.navLinks a:focus {
+  padding-bottom: 10px;
+  color: #00223e;
+  border-bottom: 2px solid #00223e;
 }
 
 .sectionBlock{

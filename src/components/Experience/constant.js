@@ -1,6 +1,26 @@
 
 const experienceList = [
     {
+      jobTitle: "Software Developer",
+      jobTime: "April 2025 - Now",
+      jobCompany: "OMERS",
+      jobDescription: [
+        `Engineered automated data pipelines and SQL-driven workflows to aggregate cross-business-unit communication data and generate KPI-driven analytics dashboards for executive stakeholders. `,
+        `Supported and operated large-scale communication, ensuring reliable and timely delivery of communication to 500,000+ recipients with a strong focus on stability and accuracy.`
+      ],
+      tags: [
+        "Next.js",
+        "Microsoft Azure",
+        "SQL",
+        "NodeJs",
+        "MeanStak",
+        "TypeScript",
+        "Gitlab",
+        "Salesforce Marketing Cloud",
+        "Analytics tool"
+      ],
+    },
+    {
       jobTitle: "Full Stack Solutions Engineer",
       jobTime: "May 2023 - Now",
       jobCompany: "Lantern Capital",
@@ -47,23 +67,23 @@ const experienceList = [
         "RabbitMQ",
       ],
     },
-    {
-      jobTitle: "Java Developer",
-      jobTime: "Jul 2019 - Sep 2019",
-      jobCompany: "The Sparks Foundation · Internship",
-      jobDescription: [
-        `Created a web application with Java EE as part of a interview assignment highlighting using web components such as JSP, Java Servlet etc.`,
-        `Developed a REST API with Java Spring Boot, JPA, and Hibernate to perform various curd operations.`,
-      ],
-      tags: [
-        "Java",
-        "SpringBoot",
-        "Hybernate",
-        "JavaEE",
-        "Apache",
-        "SQL Server"
-      ],
-    }
+    // {
+    //   jobTitle: "Java Developer",
+    //   jobTime: "Jul 2019 - Sep 2019",
+    //   jobCompany: "The Sparks Foundation · Internship",
+    //   jobDescription: [
+    //     `Created a web application with Java EE as part of a interview assignment highlighting using web components such as JSP, Java Servlet etc.`,
+    //     `Developed a REST API with Java Spring Boot, JPA, and Hibernate to perform various curd operations.`,
+    //   ],
+    //   tags: [
+    //     "Java",
+    //     "SpringBoot",
+    //     "Hybernate",
+    //     "JavaEE",
+    //     "Apache",
+    //     "SQL Server"
+    //   ],
+    // }
   ];
 
 const eductionList = [

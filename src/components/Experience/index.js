@@ -14,7 +14,7 @@ const Experience = () => {
     <>
       <Box  sx={{ flexGrow: 1 }}>
         <Grid
-        id={"jouney"}
+        id={"experience"}
           className={classname(styles.ExperienceTitleGrid)}
           container
           spacing={0}

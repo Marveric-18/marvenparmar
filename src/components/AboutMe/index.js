@@ -19,14 +19,14 @@ const AboutMe = () => {
 
   return (
     <>
-      <Box sx={{ flexGrow: 1, height: "fit-content" }}>
+      <Box id={"about"} sx={{ flexGrow: 1, height: "fit-content" }}>
         <Grid
           className={classname(styles.AboutMeTitleGrid)}
           container
           spacing={2}
         >
           <Grid
-            id={"about"}
+            
             className={classname(styles.AboutMeHeader)}
             item
             xs={12}

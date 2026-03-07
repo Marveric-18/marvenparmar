@@ -1,4 +1,3 @@
-import React from "react";
 import classNames from 'classname';
 
 import ProfileHeader from "./components/ProfileHeader";
@@ -10,7 +9,18 @@ import Skills from "./components/Skills";
 
 const Home = () => {
     return( <>
-        <div className={classNames(styles.profileBlock, styles.sectionBlock)}>
+          
+        <div id="home"  className={classNames(styles.profileBlock, styles.sectionBlock)}>
+          <div className={styles.navbarSection}>
+               <nav className={styles.navbar}>
+                    <ul className={styles.navLinks}>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="mailto:marvenparmar@gmail.com">Contact</a></li>
+                    </ul>
+               </nav>
+          </div>
           <ProfileHeader />
         </div>
         <div className={classNames(styles.deviderBlock)}>

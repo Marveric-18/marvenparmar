@@ -1,6 +1,6 @@
 .profileHeader {
     width: 45%;
-    height: 60vh;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Ensure space between elements */
@@ -40,6 +40,7 @@
 .profileTitle {
     width: 100%;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .profileTitleText {
@@ -56,7 +57,7 @@
     color: beige;
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: 20px;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 .profileFooter {
