@@ -21,7 +21,7 @@ const experienceList = [
       ],
     },
     {
-      jobTitle: "Full Stack Solutions Engineer",
+      jobTitle: "Software Developer",
       jobTime: "May 2023 - Now",
       jobCompany: "Lantern Capital",
       jobDescription: [
