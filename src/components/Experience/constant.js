@@ -22,7 +22,7 @@ const experienceList = [
     },
     {
       jobTitle: "Software Developer",
-      jobTime: "May 2023 - Now",
+      jobTime: "May 2023 - March 2025",
       jobCompany: "Lantern Capital",
       jobDescription: [
         `Led the team for ETL pipeline development by spearheading the planning, execution 
