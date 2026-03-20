@@ -9,7 +9,7 @@ import ArticleIcon from '@mui/icons-material/Article';
 import IconButton from '@mui/material/IconButton';
 // import MarvenProfileHeader from "../../assets/images/MarvenProfileHeader copy.jpeg";
 import MarvenProfileHeader from "../../assets/images/ProfileHeader4.png";
-import MavrenResumePDF from '../../assets/files/MavrenResumePDF.pdf';
+import MavrenResumePDF from '../../assets/files/MavrenResumePDF3.pdf';
 import styles from "./index.module.css";
 
 const ProfileHeader = () => {
